@@ -85,53 +85,53 @@ export default {
 </script>
 
 <style lang="scss">
-html,
-body {
-  background-color: black;
-}
-.container {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  perspective: 10px;
-}
+// html,
+// body {
+//   background-color: black;
+// }
+// .container {
+//   height: 100vh;
+//   overflow-x: hidden;
+//   overflow-y: scroll;
+//   perspective: 10px;
+// }
 
-section {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  &.image {
-    background-position: center center;
-    transform: translateZ(-1px) scale(1.5);
-    /* Force the background image to fill the whole element. */
-    background-size: cover;
-    /* Keep the image from overlapping sibling elements. */
-    z-index: -1;
-    height: 100vh;
-  }
-  &.text {
-    height: 50vh;
-  }
-  &.heading {
-    z-index: -1;
-    transform: translateY(-30vh) translateZ(1px) scale(1.5);
-  }
-}
+// section {
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   overflow: hidden;
+//   &.image {
+//     background-position: center center;
+//     transform: translateZ(-1px) scale(1.5);
+//     /* Force the background image to fill the whole element. */
+//     background-size: cover;
+//     /* Keep the image from overlapping sibling elements. */
+//     z-index: -1;
+//     height: 100vh;
+//   }
+//   &.text {
+//     height: 50vh;
+//   }
+//   &.heading {
+//     z-index: -1;
+//     transform: translateY(-30vh) translateZ(1px) scale(1.5);
+//   }
+// }
 
-.footer {
-  position: relative;
-  display: block;
-  background-color: black;
-  height: 100vh;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  h3 {
-    font-weight: normal;
-    color: var(--color-blue);
-  }
-}
+// .footer {
+//   position: relative;
+//   display: block;
+//   background-color: black;
+//   height: 100vh;
+//   color: white;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   h3 {
+//     font-weight: normal;
+//     color: var(--color-blue);
+//   }
+// }
 </style>
