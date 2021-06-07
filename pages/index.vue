@@ -1,8 +1,10 @@
 <template>
+<body>
   <div class="container">
   <div class="neon">WELLCOME TO</div>
   <div class="flux">RUDY </div>
 </div>
+</body>
 </template>
 
 <script>
@@ -14,7 +16,6 @@ export default {
 <style>
 body ,html{
   background-color: black;
-  font-family: 'Monoton', cursive;
 }
 
 @font-face {

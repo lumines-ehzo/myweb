@@ -1,28 +1,18 @@
 <template>
-  <div class="content">
-    <div class="row">
-      <div class="col-sm-8">
-        <div class="media">
-          <div class="media-body">
-            <h5 class="mt-0">นาย รัฐภูมิ เรืองกล้า</h5>
-            <p>
-              นักศึกษา มจพ.คณะวิทยาศาสตร์ประยุกต์ ภาควิชาวิทยาการคอมพิวเตอร์(CS)
-            </p>
-            <p>
-              ส่วนสูง 183 น้ำหนัก 55 เกิดวันจันทร์ ชอบสีน้ำเงิน ชอบทานข้าวผัด
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-8">
+  <b-container class="content">
+    <b-row>
+      <b-col>
+        <h6>RESUME</h6>
+        <h5>RATTAPOOM RUENGKLA</h5>
+
         <div>
           <b-carousel
             id="carousel-fade"
             style="text-shadow: 0px 0px 2px #000"
             fade
             indicators
-            img-width="200"
-            img-height="200"
+            img-width="1280"
+            img-height="720"
           >
             <b-carousel-slide
               caption="ปี 1"
@@ -38,32 +28,32 @@
             ></b-carousel-slide>
           </b-carousel>
         </div>
-      </div>
-    </div>
-  </div>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
 export default {
   layout: 'navbar',
   data() {
-      return {
-        slide: 0,
-        sliding: null
-      }
-    },
-    methods: {
-      onSlideStart(slide) {
-        this.sliding = true
-      },
-      onSlideEnd(slide) {
-        this.sliding = false
-      }
+    return {
+      slide: 0,
+      sliding: null,
     }
+  },
+  methods: {
+    onSlideStart(slide) {
+      this.sliding = true
+    },
+    onSlideEnd(slide) {
+      this.sliding = false
+    },
+  },
 }
 </script>
 
-<style>
+<style scoped>
 body {
   color: white;
 }
@@ -72,4 +62,5 @@ body {
   padding-left: 10px;
   padding-top: 10px;
 }
+
 </style>
